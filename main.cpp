@@ -1,6 +1,7 @@
 #include<iostream>
 #include "task_creation.h"
 #include "remove_task.h"
+#include "show_task.h"
 int main() {
 
     int choice;
@@ -8,6 +9,7 @@ int main() {
         cout << "\n===== Task Manager =====\n";
         cout << "1. Create new task\n";
         cout << "2. Remove a task\n";
+        cout << "3. Show all tasks\n";
         cout << "0. Exit\n";
         cout << "Choose an option: ";
         cin >> choice;
@@ -20,6 +22,10 @@ int main() {
             case 2:
                 Removetask rt;
                 rt.removeTask();
+                break;
+            case 3:
+                Showtask st;
+                st.Showtasks();
                 break;
             case 0:
                 cout << "Exiting...\n";

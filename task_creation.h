@@ -59,6 +59,7 @@ void Taskcreation::WriteFile( const std::string& content, const std::string& exp
 
 void Taskcreation::createTask() {
     string content, expire_date;
+    cin.ignore(); // Clear the input buffer
     cout << "Enter task content: ";
     getline(cin, content);
     cout << "Enter task expire date (YYYY-MM-DD): ";
