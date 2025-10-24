@@ -36,14 +36,13 @@ int Taskcreation::getNextTaskID() {
 
 //WriteFile opens the Task.txt file writes the content and close it afterwards
 void Taskcreation::WriteFile( const std::string& content, const std::string& expire_date) {
-     int id = getNextTaskID();
+    int id = getNextTaskID();
     ofstream file("Task.txt", std::ios::app); // Create and open the file
     time_t now = time(0);
     int i=0;
     if (file.is_open()) {
-
-         string timestamp = ctime(&now);
-            timestamp.pop_back(); // Remove newlin
+        string timestamp = ctime(&now);
+        timestamp.pop_back(); // Remove newlin
         
         file <<"Task ID:"<<id<<" "<< content << "   "; // Write content to the file
         file << "current date at the creation: " << timestamp << "   "; // Write current timestamp to the file
@@ -53,7 +52,6 @@ void Taskcreation::WriteFile( const std::string& content, const std::string& exp
     } else {
         std::cerr << "Failed to create or open the file.\n";
     }
-
 }
 
 
