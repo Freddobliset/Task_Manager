@@ -9,7 +9,7 @@
 
 [x] 2 - **Creazione** di un Task -> quindi salvataggio su un file
 
-[ ] 3 - **Modifica** di un Task
+[X] 3 - **Modifica** di un Task
 
 [X] 4 - **Eliminazione** di un Task
 
