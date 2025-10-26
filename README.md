@@ -16,6 +16,7 @@
 [X] 5 - **Visualizzazione** di _tutti_ i Task
 
 [] 6 - **Visualizzazione** dei task secondo dei _filtri_ che possono essere uno o piu' tra i campi del task
+
       - Filtro per data di inserimento
       - Filtro per data di scadenza
       - Ordinamento per priorità (ascendente, discendente)
@@ -23,7 +24,7 @@
 
 [X] 7 - **Visualizzazione** di una _schermata di benvenuto_
 
-[ ] 8 - **Visualizzazione** _tutti_ i comandi tramite un comando "help"
+[X] 8 - **Visualizzazione** _tutti_ i comandi tramite un comando "help"
 
 [ ] 9 - **Eliminazione** di _tutti_ i task di un determinato giorno, con un singolo comando
 
@@ -32,6 +33,7 @@
 [ ] 11 - **Salvataggio** delle modifiche automatico quando l'applicazione non viene chiusa con il comando apposito
 
 [ ] 12 - **Ricerca** di uno o piu' task per:
+
         - Data di inserimento
         - Data di scadenza
         - Task ID
