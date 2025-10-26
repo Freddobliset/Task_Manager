@@ -33,6 +33,7 @@
 [ ] 11 - **Salvataggio** delle modifiche automatico quando l'applicazione non viene chiusa con il comando apposito
 
 [ ] 12 - **Ricerca** di uno o piu' task per:
+
         - Data di inserimento
         - Data di scadenza
         - Task ID
