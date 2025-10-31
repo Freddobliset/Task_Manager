@@ -15,7 +15,7 @@
 
 [X] 5 - **Visualizzazione** di _tutti_ i Task
 
-[] 6 - **Visualizzazione** dei task secondo dei _filtri_ che possono essere uno o piu' tra i campi del task
+[X]] 6 - **Visualizzazione** dei task secondo dei _filtri_ che possono essere uno o piu' tra i campi del task
 
       - Filtro per data di inserimento
       - Filtro per data di scadenza
