@@ -63,19 +63,67 @@ void Showtask::Showtasks() {
         }
     } else if(choice == 3){
         // Implementation for showing tasks by date of creation
-        cout << "Feature not implemented yet." << endl;
+        cin.ignore();
+        if(file.is_open()){
+            file.clear();                    // Clear any error flags
+            file.seekg(0, ios::beg);        // Move pointer to beginning
+            cout << "\n===== Current Tasks =====\n";
+            string line;
+            string Date;
+            cout<<"Enter the date of creation (example: Thu Oct 23): "; //date with example
+            getline(cin,Date);
+            while(getline(file, line)){
+                if(line.find("current date at the creation: "+(Date))!=string::npos){ 
+                cout<<line<<endl;
+                }
+            }
+        }
+        cin.ignore();
+        cin.clear();
+        cin.seekg(0);
     }
     else if(choice == 4){
-        // Implementation for showing tasks by date of expire
-        cout << "Feature not implemented yet." << endl;
+        cin.ignore();
+        if(file.is_open()){
+            file.clear();                    // Clear any error flags
+            file.seekg(0, ios::beg);        // Move pointer to beginning
+            cout << "\n===== Current Tasks =====\n";
+            string line;
+            string Date;
+            cout<<"Enter the task expiring date (Y/M/D): "; //date with example
+            getline(cin,Date);
+            while(getline(file, line)){
+                if(line.find("task expiring date: "+(Date))!=string::npos){ 
+                cout<<line<<endl;
+                }
+            }
+        }
+        cin.ignore();
+        cin.clear();
+        cin.seekg(0);
     }
     else if(choice == 5){
-        // Implementation for showing tasks by priority
-        cout << "Feature not implemented yet." << endl;
+        cin.ignore();
+        if(file.is_open()){
+            file.clear();                    // Clear any error flags
+            file.seekg(0, ios::beg);        // Move pointer to beginning
+            cout << "\n===== Current Tasks =====\n";
+            string line;
+            string Priority;
+            cout<<"Enter the task priority (Low/Medium/High): "; //priority with example
+            getline(cin,Priority);
+            while(getline(file, line)){
+                if(line.find("priority: "+(Priority))!=string::npos){ 
+                cout<<line<<endl;
+                }
+            }
+        }
+        cin.ignore();
+        cin.clear();
+        cin.seekg(0);
     }
     else{
         cout<<"Invalid choice!"<<endl;
-        break;
     }
     }while(choice!=0);
     }

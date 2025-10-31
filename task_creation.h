@@ -8,7 +8,7 @@ class Taskcreation {
 public:
     void createTask();
 private:    
-    void WriteFile(const std::string& content, const std::string& expire_date);
+    void WriteFile(const std::string& content, const std::string& expire_date, const std::string& priority);
     int getNextTaskID();
 };
 
@@ -35,7 +35,7 @@ int Taskcreation::getNextTaskID() {
 }
 
 //WriteFile opens the Task.txt file writes the content and close it afterwards
-void Taskcreation::WriteFile( const std::string& content, const std::string& expire_date) {
+void Taskcreation::WriteFile( const std::string& content, const std::string& expire_date, const std::string& priority) {
     int id = getNextTaskID();
     ofstream file("Task.txt", std::ios::app); // Create and open the file
     time_t now = time(0);
@@ -43,10 +43,10 @@ void Taskcreation::WriteFile( const std::string& content, const std::string& exp
     if (file.is_open()) {
         string timestamp = ctime(&now);
         timestamp.pop_back(); // Remove newlin
-        
         file <<"Task ID:"<<id<<" "<< content << "   "; // Write content to the file
         file << "current date at the creation: " << timestamp << "   "; // Write current timestamp to the file
-        file << "task expiring date: "<< expire_date << "\n"; // Write expire date to the file
+        file << "task expiring date: "<< expire_date << "  "; // Write expire date to the file
+        file << "priority: " << priority << "\n";
         file.close();    // Close the file
         cout << "File '" << "Task.txt" << "' created and written successfully.\n";
     } else {
@@ -56,12 +56,13 @@ void Taskcreation::WriteFile( const std::string& content, const std::string& exp
 
 
 void Taskcreation::createTask() {
-    string content, expire_date;
-    cin.ignore(); // Clear the input buffer
+    string content, expire_date, priority;
     cout << "Enter task content: ";
     getline(cin, content);
     cout << "Enter task expire date (YYYY-MM-DD): ";
     getline(cin, expire_date);
-    WriteFile(content,expire_date);
+    cout << "Enter task priority (Low, Medium, High): ";
+    getline(cin, priority);
+    WriteFile(content,expire_date,priority);
     std::cout << "Task created!"<< std::endl;
 }

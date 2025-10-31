@@ -1,3 +1,3 @@
-Task ID:1 task1   current date at the creation: Thu Oct 23 19:47:14 2025   task expiring date: 2026-11-11
-Task ID:2 task22   current date at the creation: Fri Oct 24 10:30:38 2025   task expiring date: 2025-10-15
-Task ID:3 task21   current date at the creation: Fri Oct 24 10:30:00 2025   task expiring date: 2023-08-12
+Task ID:1 task1   current date at the creation: Fri Oct 31 21:31:08 2025   task expiring date: 2026-11-11  priority: Low
+Task ID:2 task2   current date at the creation: Fri Oct 31 21:31:30 2025   task expiring date: 2026-11-12  priority: Medium
+Task ID:3 task3   current date at the creation: Fri Oct 31 21:31:45 2025   task expiring date: 2026-11-13  priority: High
