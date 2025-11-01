@@ -15,7 +15,7 @@
 
 [X] 5 - **Visualizzazione** di _tutti_ i Task
 
-[X]] 6 - **Visualizzazione** dei task secondo dei _filtri_ che possono essere uno o piu' tra i campi del task
+[X] 6 - **Visualizzazione** dei task secondo dei _filtri_ che possono essere uno o piu' tra i campi del task
 
       - Filtro per data di inserimento
       - Filtro per data di scadenza
@@ -26,7 +26,7 @@
 
 [X] 8 - **Visualizzazione** _tutti_ i comandi tramite un comando "help"
 
-[ ] 9 - **Eliminazione** di _tutti_ i task di un determinato giorno, con un singolo comando
+[X] 9 - **Eliminazione** di _tutti_ i task di un determinato giorno, con un singolo comando
 
 [X] 10 - **Chiusura** dell'applicazione con comando apposito
 
